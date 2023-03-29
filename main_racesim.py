@@ -221,7 +221,7 @@ def main(sim_opts: dict, race_pars_file: str, mcs_pars_file: str) -> list:
             laps_simulated = race_results[0].cur_lap
             t_race_winner = np.sort(race_results[0].racetimes[laps_simulated, :])[0]
             race_results[0].plot_racetime_diffto_reflaptime(ref_laptime=t_race_winner / laps_simulated)
-
+            
         # evaluation
         # race_results[0].print_race_standings(racetime=2520.2)
 
